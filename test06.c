@@ -19,16 +19,22 @@ void ppp(int a[],int n){
 int main(void){
 	
 	int n,i;
-	scanf("%d",&n);
-	int a[n];
 
-	for (i=0;i<n;i++)
-		scanf("%d",&a[i]);
+	do{
+		scanf("%d",&n);
 
-	ppp(a,n);
-	for (i=0;i<n;i++)
-		printf("%d ",a[i]);
+		int a[n];
 
-	printf("\n");
+		for (i=0;i<n;i++)
+			scanf("%d",&a[i]);
+
+		ppp(a,n);
+
+		for (i=0;i<n;i++)
+			printf("%d ",a[i]);
+		printf("\n");
+
+	}while(n!=0);
+
     	return 0;
 }
